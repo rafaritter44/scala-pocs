@@ -2,13 +2,13 @@
 
 ## Building
 
-`$ sbt clean assembly`
+- `$ sbt clean assembly`
 
 ## Running
 
 ### Locally
 
-`$ spark-submit target/scala-2.11/TotalSpentByCustomer-assembly-1.0.0.jar`
+- `$ spark-submit target/scala-2.11/TotalSpentByCustomer-assembly-1.0.0.jar`
 
 ### On Amazon EMR
 
