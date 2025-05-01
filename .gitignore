@@ -2,3 +2,11 @@
 **/.project
 **/.classpath
 **/.settings/
+
+# VS Code
+.vscode/
+
+# Metals
+.metals/
+.bloop/
+**/project/**/metals.sbt
