@@ -1,5 +1,9 @@
-@main def hello(): Unit =
-  println("Hello world!")
-  println(msg)
+@main def hello(): Unit = {
+  val value = "value"
+  var variable = "variable value 1"
+  println(value)
+  println(variable)
 
-def msg = "I was compiled by Scala 3. :)"
+  variable = "variable value 2"
+  println(variable)
+}
