@@ -14,7 +14,8 @@ import redis.clients.jedis.params.ZRangeParams
   val top3 = jedis.zrangeWithScores(key, ZRangeParams.zrangeParams(0, 2).rev())
   println(top3) // [[Bob,100.0], [Charlie,90.0], [Alice,75.0]]
 
-  val bobRank = jedis.zrevrank(key, "Bob") + 1
+  val getRank = (player: String) => jedis.zrevrank(key, player) + 1
+  val bobRank = getRank("Bob")
   println(bobRank) // 1
 
   jedis.del(key)
