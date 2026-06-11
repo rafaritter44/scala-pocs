@@ -12,4 +12,7 @@
     value + " inside block"
   })
   println(value)
+
+  val func = (str: String) => "func called with: " + str
+  println(func("hello"))
 }
