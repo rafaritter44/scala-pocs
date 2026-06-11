@@ -6,4 +6,10 @@
 
   variable = "variable value 2"
   println(variable)
+
+  println({
+    val value = "other value"
+    value + " inside block"
+  })
+  println(value)
 }
