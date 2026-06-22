@@ -22,4 +22,10 @@
   def multiParamListMethod(arg1: String, arg2: String)(arg3: String): String =
     "method with multiple param lists called with: " + arg1 + ", " + arg2 + ", and " + arg3
   println(multiParamListMethod("hello", "world")("scala"))
+
+  class Greeter(prefix: String, suffix: String):
+    def greet(name: String): Unit =
+      println(prefix + name + suffix)
+  val greeter = Greeter("Hello, ", "!")
+  greeter.greet("Scala developer")
 }
