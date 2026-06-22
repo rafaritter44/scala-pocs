@@ -18,4 +18,8 @@
 
   def method(arg: String): String = "method called with: " + arg
   println(method("hello"))
+
+  def multiParamListMethod(arg1: String, arg2: String)(arg3: String): String =
+    "method with multiple param lists called with: " + arg1 + ", " + arg2 + ", and " + arg3
+  println(multiParamListMethod("hello", "world")("scala"))
 }
