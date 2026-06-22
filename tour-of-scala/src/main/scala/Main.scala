@@ -13,6 +13,9 @@
   })
   println(value)
 
-  val func = (str: String) => "func called with: " + str
+  val func = (arg: String) => "func called with: " + arg
   println(func("hello"))
+
+  def method(arg: String): String = "method called with: " + arg
+  println(method("hello"))
 }
