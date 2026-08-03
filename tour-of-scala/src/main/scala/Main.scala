@@ -28,4 +28,6 @@
       println(prefix + name + suffix)
   val greeter = Greeter("Hello, ", "!")
   greeter.greet("Scala developer")
+
+  // Resume from here: https://docs.scala-lang.org/tour/basics.html#case-classes
 }
